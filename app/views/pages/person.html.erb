@@ -1,0 +1,5 @@
+<% if @name.blank? || @age.blank? %>
+	<render :text => <%= @text %>
+<% else %>
+	<render :text => <%= @introduce %> <%= @age %> <%= @nickname %>	
+<% end %>
