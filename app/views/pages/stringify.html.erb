@@ -1,0 +1,5 @@
+<% if @name.blank? || @adjective.blank? %>
+	<render :text => <%= @text %>
+<% else %>
+	<render :text => <%= @name %> is so <%= @adjective %>
+<% end %>
